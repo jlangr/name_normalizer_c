@@ -2,7 +2,7 @@ test: NameNormalizerTest
 	./NameNormalizerTest
 
 NameNormalizer.o: NameNormalizer.c include/NameNormalizer.h
-	g++ -x c -I$(CPPUTEST_HOME)/include -Iinclude -c -Wall -g $<
+	g++ -I$(CPPUTEST_HOME)/include -Iinclude -c -Wall -g $<
 
 NameNormalizerTest.o: NameNormalizerTest.cpp NameNormalizer.c include/NameNormalizer.h
 	g++ -I$(CPPUTEST_HOME)/include -Iinclude -c -Wall -g $<
